@@ -43,7 +43,8 @@ New-NonsenseParagraph -SentenceCount 7
     $path = Join-Path -path $env:TEMP -ChildPath $filename
     #create the document
     #encode as UTF8 to save the diacritical characters
-    New-NonsenseDocument -ParagraphCount (Get-Random -Minimum 3 -Maximum 10) | Out-File -FilePath $path -Encoding utf8
+    New-NonsenseDocument -ParagraphCount (Get-Random -Minimum 3 -Maximum 10) | 
+    Out-File -FilePath $path -Encoding utf8
     #view the result
     Get-Item $path
 }
