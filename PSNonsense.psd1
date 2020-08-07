@@ -12,10 +12,10 @@
 RootModule = 'PSNonsense.psm1'
 
 # Version number of this module.
-ModuleVersion = '0.0.1'
+ModuleVersion = '0.1.0'
 
 # Supported PSEditions
-CompatiblePSEditions = 'Desktop'
+CompatiblePSEditions = 'Desktop,Core'
 
 # ID used to uniquely identify this module
 GUID = '8f3d8868-8fa0-4c20-920d-d34a5c23a515'
@@ -30,7 +30,7 @@ CompanyName = 'JDH Information Technology Solutions, Inc.'
 Copyright = '2020 JDH Information Technology Solutions, Inc.'
 
 # Description of the functionality provided by this module
-Description = 'My solution to the Iron Scripter PowerSHell challenge described at  https://ironscripter.us/a-powershell-nonsense-challenge/.'
+Description = 'My solution to the Iron Scripter PowerShell challenge described at https://ironscripter.us/a-powershell-nonsense-challenge/.'
 
 # Minimum version of the PowerShell engine required by this module
 PowerShellVersion = '5.1'
@@ -69,17 +69,16 @@ PowerShellVersion = '5.1'
 # NestedModules = @()
 
 # Functions to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no functions to export.
-FunctionsToExport = 'New-NonsenseWord', 'New-NonsenseSentence', 'New-NonsenseParagraph', 
-               'New-NonsenseDocument'
+FunctionsToExport = 'New-NonsenseWord', 'New-NonsenseSentence', 'New-NonsenseParagraph','New-NonsenseDocument'
 
 # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
-CmdletsToExport = '*'
+CmdletsToExport = ''
 
 # Variables to export from this module
-VariablesToExport = '*'
+VariablesToExport = ''
 
 # Aliases to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no aliases to export.
-AliasesToExport = '*'
+AliasesToExport = 'nnw','nns','nnp','nnd'
 
 # DSC resources to export from this module
 # DscResourcesToExport = @()
@@ -96,7 +95,7 @@ PrivateData = @{
     PSData = @{
 
         # Tags applied to this module. These help with module discovery in online galleries.
-        # Tags = @()
+        Tags = @("IronScripter")
 
         # A URL to the license for this module.
         LicenseUri = 'https://github.com/jdhitsolutions/PSNonsense/blob/master/license.txt'
